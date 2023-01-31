@@ -76,7 +76,8 @@ body {
     font-size: 1em;
     font-weight: 400;
     color: var(--dark-grayish-magenta);
-    font-family: var(--font-400);
+
+    /* font-family: var(--font-400); */
 }
 
 .container-stars {
