@@ -1,25 +1,25 @@
 @font-face {
     font-family: LeagueSpartanBold;
     src:
-        url("/fonts/LeagueSpartan-Bold.woff2") format("woff2"),
-        url("/fonts/LeagueSpartan-Bold.woff") format("woff"),
-        url("/fonts/LeagueSpartan-Bold.ttf") format("truetype");
+        url("fonts/LeagueSpartan-Bold.woff2") format("woff2"),
+        url("fonts/LeagueSpartan-Bold.woff") format("woff"),
+        url("fonts/LeagueSpartan-Bold.ttf") format("truetype");
 }
 
 @font-face {
     font-family: LeagueSpartanMedium;
     src:
-        url("/fonts/LeagueSpartan-Medium.woff2") format("woff2"),
-        url("/fonts/LeagueSpartan-Medium.woff") format("woff"),
-        url("/fonts/LeagueSpartan-Medium.ttf") format("truetype");
+        url("fonts/LeagueSpartan-Medium.woff2") format("woff2"),
+        url("fonts/LeagueSpartan-Medium.woff") format("woff"),
+        url("fonts/LeagueSpartan-Medium.ttf") format("truetype");
 }
 
 @font-face {
     font-family: LeagueSpartanRegular;
     src:
-        url("/fonts/LeagueSpartan-Regular.woff2") format("woff2"),
-        url("/fonts/LeagueSpartan-Regular.woff") format("woff"),
-        url("/fonts/LeagueSpartan-Regular.ttf") format("truetype");
+        url("fonts/LeagueSpartan-Regular.woff2") format("woff2"),
+        url("fonts/LeagueSpartan-Regular.woff") format("woff"),
+        url("fonts/LeagueSpartan-Regular.ttf") format("truetype");
 }
 
 /*
