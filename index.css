@@ -1,0 +1,215 @@
+@font-face {
+    font-family: LeagueSpartanBold;
+    src:
+        url("/fonts/LeagueSpartan-Bold.woff2") format("woff2"),
+        url("/fonts/LeagueSpartan-Bold.woff") format("woff"),
+        url("/fonts/LeagueSpartan-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: LeagueSpartanMedium;
+    src:
+        url("/fonts/LeagueSpartan-Medium.woff2") format("woff2"),
+        url("/fonts/LeagueSpartan-Medium.woff") format("woff"),
+        url("/fonts/LeagueSpartan-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: LeagueSpartanRegular;
+    src:
+        url("/fonts/LeagueSpartan-Regular.woff2") format("woff2"),
+        url("/fonts/LeagueSpartan-Regular.woff") format("woff"),
+        url("/fonts/LeagueSpartan-Regular.ttf") format("truetype");
+}
+
+/*
+    weights: 400 - 500 -700
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--white);
+    font-size: 15px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+:root {
+    --very-dark-magenta: hsl(300deg 43% 22%);
+    --soft-pink: hsl(333deg 80% 67%);
+    --font-700: leaguespartanbold;
+    --font-500: leaguespartanmedium;
+    --font-400: leaguespartanregular;
+    --dark-grayish-magenta: hsl(303deg 10% 53%);
+    --light-grayish-magenta: hsl(300deg 24% 96%);
+    --white: hsl(0deg 0% 100%);
+}
+
+.container-info {
+    width: 23.3em;
+    text-align: center;
+    margin: 25px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 15px;
+}
+
+.title-info {
+    width: inherit;
+    font-size: 2.5em;
+    font-weight: 700;
+    color: var(--very-dark-magenta);
+    font-family: var(--font-700);
+}
+
+.paragraph-info {
+    font-size: 1em;
+    font-weight: 400;
+    color: var(--dark-grayish-magenta);
+    font-family: var(--font-400);
+}
+
+.container-stars {
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 25px;
+    margin: 15px 0;
+}
+
+.star-item {
+    box-sizing: border-box;
+    width: 350px;
+    background-color: var(--light-grayish-magenta);
+    padding: 10px 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+}
+
+.text-star {
+    font-family: var(--font-500);
+    color: var(--very-dark-magenta);
+}
+
+.card {
+    box-sizing: border-box;
+    max-width: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 15px;
+    background-color: var(--very-dark-magenta);
+    padding: 25px;
+    color: var(--white);
+    position: relative;
+}
+
+.container-profile {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.img-profile {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.name-profile {
+    font-weight: 500;
+    font-size: 1.1em;
+    font-family: var(--font-700);
+}
+
+.status {
+    opacity: 0.5;
+    font-weight: 400;
+    font-family: var(--font-400);
+}
+
+.paragraph-profile {
+    font-weight: 500;
+    font-family: var(--font-400);
+}
+
+@media screen and (min-width: 450px) {
+    body {
+        display: grid;
+        grid-template-rows: max-content;
+        justify-content: center;
+        align-content: center;
+        height: 100vh;
+    }
+
+
+
+    .title-info {
+        font-size: 3em;
+    }
+
+    .paragraph-info {
+        font-size: 1.25em;
+    }
+
+    
+
+    .container-info {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        align-self: start;
+        text-align: left;
+    }
+
+    .container-stars {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        min-width: 100px;
+        margin: 25px;
+    }
+
+    .star-item {
+        flex-flow: row nowrap;
+        align-items: center;
+    }
+
+    .container-cards {
+        grid-column: 1/3;
+        grid-row: 2/3;
+        display: flex;
+        flex-flow: row nowrap;
+        height: 250px;
+    }
+
+    .star-item:first-child {
+        align-self: start;
+    }
+
+    .star-item:nth-child(2) {
+        align-self: center;
+    }
+
+    .star-item:nth-child(3) {
+        align-self: end;
+    }
+
+    .card:first-child {
+        align-self: start;
+    }
+
+    .card:nth-child(2) {
+        align-self: center;
+    }
+
+    .card:nth-child(3) {
+        align-self: end;
+    }
+}
