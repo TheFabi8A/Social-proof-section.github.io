@@ -65,7 +65,7 @@ body {
     font-size: 2.5em;
     font-weight: 700;
     color: var(--very-dark-magenta);
-    font-family: var(--font-700);
+    font-family: LeagueSpartanBold, sans-serif;
 }
 
 .paragraph-info {
@@ -150,8 +150,6 @@ body {
         height: 100vh;
     }
 
-
-
     .title-info {
         font-size: 3em;
     }
@@ -159,8 +157,6 @@ body {
     .paragraph-info {
         font-size: 1.25em;
     }
-
-    
 
     .container-info {
         grid-column: 1/2;
