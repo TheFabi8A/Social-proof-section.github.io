@@ -212,7 +212,7 @@ body {
         grid-row: 2/3;
         display: flex;
         flex-flow: row nowrap;
-        height: 16.666em;
+        height: 17.333em;
         margin: 0;
         gap: 2em;
     }
