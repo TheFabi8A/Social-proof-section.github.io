@@ -38,6 +38,7 @@ body {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    margin: 1.6em;
 }
 
 :root {
@@ -54,24 +55,25 @@ body {
 }
 
 .container-info {
-    width: 23.3em;
+    width: 100%;
     text-align: center;
-    margin: 25px;
     display: flex;
-    flex-flow: column nowrap;
-    gap: 15px;
+    flex-direction: column;
+    gap: 1.6em;
+    margin-top: 3.6em;
+    margin-bottom: 3em;
 }
 
 .title-info {
     width: inherit;
     font-size: 2.5em;
-    font-weight: 700;
     color: var(--very-dark-magenta);
     font-family: var(--font-700), sans-serif;
 }
 
 .paragraph-info {
-    font-size: 1em;
+    line-height: 1.25em;
+    font-size: 1.19em;
     color: var(--dark-grayish-magenta);
     font-family: var(--font-400), sans-serif;
 }
@@ -80,34 +82,47 @@ body {
     text-align: center;
     display: flex;
     flex-flow: column nowrap;
-    gap: 25px;
-    margin: 15px 0;
+    gap: 1.3em;
+    width: 100%;
+    margin-bottom: 3.3em;
 }
 
 .star-item {
-    box-sizing: border-box;
-    width: 350px;
+    width: 100%;
     background-color: var(--light-grayish-magenta);
     padding: 10px 15px;
     border-radius: 10px;
     display: flex;
-    flex-flow: column nowrap;
-    gap: 10px;
+    flex-direction: column;
+    gap: 1em;
 }
 
 .text-star {
-    font-family: var(--font-500);
+    font-family: var(--font-700), sans-serif;
     color: var(--very-dark-magenta);
+    font-size: 1.14em;
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+.container-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-bottom: 5em;
 }
 
 .card {
     box-sizing: border-box;
-    max-width: 350px;
+    width: 100%;
     border-radius: 10px;
     overflow: hidden;
-    margin: 15px;
     background-color: var(--very-dark-magenta);
-    padding: 25px;
+    padding: 2em;
     color: var(--white);
     position: relative;
 }
@@ -116,64 +131,78 @@ body {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    gap: 25px;
+    gap: 1.4em;
     margin-bottom: 25px;
 }
 
+.info-profile {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
 .img-profile {
-    width: 40px;
+    width: 3em;
     border-radius: 50%;
 }
 
 .name-profile {
-    font-weight: 500;
     font-size: 1.1em;
-    font-family: var(--font-700);
+    font-family: var(--font-700), sans-serif;
 }
 
 .status {
-    opacity: 0.5;
-    font-weight: 400;
-    font-family: var(--font-400);
+    color: var(--soft-pink);
+    font-size: 1.1em;
+    font-family: var(--font-400), sans-serif;
 }
 
 .paragraph-profile {
-    font-weight: 500;
-    font-family: var(--font-400);
+    font-family: var(--font-400), sans-serif;
+    font-size: 1.125em;
+    line-height: 1.5em;
 }
 
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 768px) {
     body {
         display: grid;
         grid-template-rows: max-content;
         justify-content: center;
         align-content: center;
-        height: 100vh;
+        min-height: 100vh;
+        max-width: 74em;
+        margin: 0 auto;
     }
 
     .title-info {
-        font-size: 3em;
+        font-size: 3.5em;
     }
 
     .paragraph-info {
-        font-size: 1.25em;
+        font-size: 1.2em;
+        align-self: flex-start;
     }
 
     .container-info {
+        max-width: 27.6em;
         grid-column: 1/2;
         grid-row: 1/2;
         align-self: start;
         text-align: left;
+        margin: 5em 0;
     }
 
     .container-stars {
         grid-column: 2/3;
         grid-row: 1/2;
-        min-width: 100px;
-        margin: 25px;
+        max-width: 37em;
+        margin-bottom: 0;
+        margin-top: 1em;
     }
 
     .star-item {
+        padding: 1.3em 2em;
+        max-width: 29.6em;
         flex-flow: row nowrap;
         align-items: center;
     }
@@ -184,6 +213,8 @@ body {
         display: flex;
         flex-flow: row nowrap;
         height: 250px;
+        margin: 0;
+        gap: 2em;
     }
 
     .star-item:first-child {
